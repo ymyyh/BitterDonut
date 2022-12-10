@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="frente" />
         <module name="resource" />
         <module name="user" />
         <module name="gateway" />
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="chatRoom" target="11" />
       <module name="common" target="11" />
+      <module name="frente" target="11" />
       <module name="gateway" target="11" />
       <module name="resource" target="11" />
       <module name="user" target="11" />
@@ -23,9 +25,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="chatRoom" options="-parameters" />
+      <module name="frente" options="-parameters" />
       <module name="gateway" options="-parameters" />
-      <module name="resource" options="-parameters --add-modules java.base" />
-      <module name="user" options="-parameters --add-modules java.base" />
+      <module name="resource" options="-parameters" />
+      <module name="user" options="-parameters" />
     </option>
   </component>
 </project>
