@@ -45,7 +45,7 @@
 <%--    </div>--%>
 <%--</div>--%>
 
-${countResource}
+<p>${requestScope.countResources}</p>
 
 </body>
 </html>
