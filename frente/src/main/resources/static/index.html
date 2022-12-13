@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+<%@ taglib prefix="c" url="http://java.sun.com/jsp/jstl/core"%>
 <head>
     <meta charset="UTF-8">
     <title>HomePage</title>
     <style>
         .pic div img{
-            width: 500px;
-            height: 300px;
-            margin: 10px;
+            width: 576px;
+            height: 324px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 50px;
+            float: left;
+        }
+        .pic div a{
+            width: 576px;
+            margin-left: 25px;
+            margin-right: 25px;
+            float: left;
+            text-align: center;
+        }
+        .url div{
+            text-align: right;
         }
     </style>
 </head>
 <body>
-<h1 align="center">BitterDonut资源网站</h1>
-<hr>
-<div class="pic">
-    <div><img src="picture/picture001.jpg"></div>
-    <div><img src="picture/picture002.jpg"></div>
-    <div><img src="picture/picture003.jpg"></div>
-    <div><img src="picture/picture004.jpg"></div>
-</div>
-
-
+    <h1 align="center">BitterDonut资源网站</h1>
+    <div class="url">
+        <div><a href="http://localhost:8011/login">登录</a></div>
+    </div>
+    <hr>
+    <div class="pic">
+        <div>
+            <tr>
+                <td><img src="picture/picture001.jpg"></td>
+                <td><img src="picture/picture002.jpg"></td>
+                <td><img src="picture/picture003.jpg"></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="picture/picture001.jpg">资源名称</a></td>
+                <td align="center"><a href="picture/picture002.jpg">资源名称</a></td>
+                <td align="center"><a href="picture/picture003.jpg">资源名称</a></td>
+            </tr>
+        </div>
+    </div>
 </body>
 </html>

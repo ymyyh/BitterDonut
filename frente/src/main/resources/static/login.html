@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<center>
+    <form action="http://192.168.56.1:8003/login" target="_blank" method="post">
+        <table border="0" cellspacing="" cellpadding="">
+            <tr>
+                <td><label for="firstname">名字:</label></td>
+                <td><input type="text" name="firstname" id="firstname" required="required" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">姓氏:</label></td>
+                <td><input type="text" name="lastname" id="lastname" required="required" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="login name">登录名:</label></td>
+                <td><input type="text" name="login name" required="required" pattern="^\w{4,8}$" id="login name" value="" />（可包含a-z、0-9和下划线）</td>
+            </tr>
+            <tr>
+                <td><label for="password">密码:</label></td>
+                <td><input type="password" name="password" required="required" pattern="^[a-zA-Z]\w{5,17}$" id="password" value="" />（至少包含6个字符）</td>
+            </tr>
+            <tr>
+                <td><label for="password2">再次输入密码:</label></td>
+                <td><input type="password" name="password2" required="required" pattern="^[a-zA-Z]\w{5,17}$" id="password2" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="myEmail">电子邮箱:</label></td>
+                <td><input type="email" name="myEmail" id="myEmail" value="" />（必须包含@字符）</td>
+            </tr>
+            <tr>
+                <td><label>头像:</label></td>
+                <td><input type="file" name="myFile" /></td>
+            </tr>
+        </table>
+        <input type="submit" value="提交" />
+        <input type="reset" onclick="reset();return false;" value="重填" />
+    </form>
+</center>
+</body>
+</html>
